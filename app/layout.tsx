@@ -40,7 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <EditorialMobileNav navItems={navItems} groups={groupOrder} />
 
           <div className="hidden lg:flex min-h-screen">
-            <aside className="w-[300px] xl:w-[340px] shrink-0 border-r border-[#1a3a2e]/15 px-8 xl:px-10 py-10 sticky top-0 self-start h-screen overflow-y-auto">
+            <aside className="w-[300px] xl:w-[340px] shrink-0 border-r border-[#1a3a2e]/15 px-8 xl:px-10 py-10 sticky top-0 self-start max-h-screen overflow-y-auto no-scrollbar">
               <Link href="/" className="block group">
                 <div className="font-fraunces text-[11px] tracking-[0.3em] uppercase text-[#1a3a2e]/70">
                   Blumen

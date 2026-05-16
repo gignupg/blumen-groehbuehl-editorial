@@ -206,13 +206,21 @@ function AdresseBlock() {
         <div className="bg-white p-2 border border-[#1a3a2e]/15 shadow-[0_2px_0_rgba(26,58,46,0.08)]">
           <iframe
             title="Karte zu Blumen Gröhbühl"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=8.5780%2C49.1438%2C8.6020%2C49.1538&amp;layer=mapnik&amp;marker=49.1488%2C8.5900"
+            src="https://maps.google.com/maps?q=Blumen+Gr%C3%B6hb%C3%BChl%2C+Weingartener+Stra%C3%9Fe+27%2C+76646+Bruchsal&output=embed"
             className="w-full aspect-[5/4] block"
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
         <div className="mt-2 font-cormorant italic text-[13px] text-[#1a3a2e]/70">
-          Kartendaten © OpenStreetMap-Mitwirkende.
+          <a
+            href="https://maps.app.goo.gl/jnsBKqTRD29CBzGw6"
+            target="_blank"
+            rel="noopener"
+            className="underline decoration-[#c4937a]/60 underline-offset-4"
+          >
+            In Google Maps öffnen →
+          </a>
         </div>
       </div>
     </div>

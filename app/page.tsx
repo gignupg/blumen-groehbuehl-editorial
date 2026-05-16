@@ -41,28 +41,26 @@ export default function EditorialHome() {
         <div className="flex items-baseline justify-between mb-6">
           <h2 className="font-fraunces italic text-[#c4937a] text-[20px]">— Der Laden</h2>
           <span className="font-fraunces text-[11px] tracking-[0.25em] uppercase text-[#1a3a2e]/60">
-            Plates I — IV
+            Tafel I
           </span>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-7">
-          {homePhotos.map((p, i) => (
-            <figure key={p} className="group">
-              <div className="bg-white p-2 border border-[#1a3a2e]/15 shadow-[0_2px_0_rgba(26,58,46,0.08)]">
-                <div className="aspect-[4/3] overflow-hidden bg-[#dcc7b0] flex items-center justify-center">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={photo(p)}
-                    alt={`Schaufenster — Tafel ${i + 1}`}
-                    className="max-w-full max-h-full pixel-img"
-                  />
-                </div>
-              </div>
-              <figcaption className="mt-2 font-cormorant italic text-[13px] text-[#1a3a2e]/70 leading-snug">
-                Plate {['I', 'II', 'III', 'IV'][i]}. Schaufenster, Frühling.
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        <figure className="mx-auto max-w-[683px]">
+          <div className="bg-white p-2 border border-[#1a3a2e]/15 shadow-[0_2px_0_rgba(26,58,46,0.08)]">
+            <div className="grid grid-cols-[351fr_316fr] gap-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={photo('home_01.gif')} alt="Schaufenster oben links" className="w-full h-auto block pixel-img" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={photo('home_02.gif')} alt="Schaufenster oben rechts" className="w-full h-auto block pixel-img" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={photo('home_03.gif')} alt="Schaufenster unten links" className="w-full h-auto block pixel-img" />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={photo('home_04_neu.gif')} alt="Schaufenster unten rechts" className="w-full h-auto block pixel-img" />
+            </div>
+          </div>
+          <figcaption className="mt-3 font-cormorant italic text-[13px] text-[#1a3a2e]/70 leading-snug text-center">
+            Tafel I. Schaufenster an der Weingartener Straße, Untergrombach.
+          </figcaption>
+        </figure>
       </section>
 
       <section className="py-10 lg:py-16 grid grid-cols-12 gap-x-6 gap-y-10">
